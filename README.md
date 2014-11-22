@@ -1,7 +1,3 @@
-# Django Template for Dorm7
-
-This is a django template for dorm7
-
 ## INSTALLATION & SETTINGS
 
 ### Setting Virtualenv
