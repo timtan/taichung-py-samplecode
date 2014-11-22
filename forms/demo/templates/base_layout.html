@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="col-xs-12">
+
+        <div class="layout-header">
+            <a class="btn btn-info btn-sm" href="{% url 'login' %}">login</a>
+            <a class="btn btn-info btn-sm" href="{% url 'logout' %}">logout</a>
+        </div>
+
+        <div class="layout-body">
+        {% block content%}
+            <a href="{% url 'home' %}">Demo Home</a>
+        {% endblock %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}

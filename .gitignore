@@ -1,0 +1,9 @@
+*.pyc
+*~
+build
+*.db
+*.log
+.DS_Store
+venv
+VENV
+.idea/

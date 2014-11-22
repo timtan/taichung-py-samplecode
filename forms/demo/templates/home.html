@@ -1,0 +1,15 @@
+{% extends "base_layout.html" %}
+
+
+{% block content %}
+
+    <h1>starts here</h1>
+    <ul>
+        <li><a href="{% url 'traditional' %}">traditional</a></li>
+        <li><a href="{% url 'with_csrf' %}">with_csrf</a></li>
+        <li><a href="{% url 'other' %}">other</a></li>
+        <li><a href="{% url 'demo.views.easier_form' %}">easier_form</a></li>
+        <li></li>
+    </ul>
+
+{% endblock %}

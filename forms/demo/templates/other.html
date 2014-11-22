@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+    <a><h1>你想當美國公民嗎?</h1></a>
+
+        {% comment %} 實務上會是 一個 iframe{% endcomment %}
+        <form id='yo' method="POST" action="http://127.0.0.1:8000/traditional/">
+            <input type="hidden" name="name" value="monkey"/>
+            <input type="hidden" name="money" value="0"/>
+            <button type="submit"></button>
+        </form>
+
+    <script src="{% static 'js/jquery.js'%}"></script>
+    <script>
+        $('a').on('click',function(){
+            $('form').submit();
+        });
+    </script>
+
+{% endblock %}
