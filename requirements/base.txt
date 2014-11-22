@@ -3,3 +3,4 @@ Unipath==1.0
 wsgiref==0.1.2
 django-braces==1.4.0
 logutils>=0.3.3
+django-crispy-forms==1.4.0
